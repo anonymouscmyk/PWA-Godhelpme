@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Geotacher Quiz</title>
+	<script src="quizproject.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Farro&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<!--include font links-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<!-- Favicon Link -->
+<link rel="shortcut icon" href="images/icon-192x192.png"/>
+<link rel="apple-touch-icon" href="images/icon-192x192.png">
+<!-- link rel="manifest" href="manifest.json -->
+<link rel="manifest" href="manifest.json">
+  <!-- Description -->
+    <meta name="description" content="An app which gives information about countries and has a geography quiz inbuilt">
+    <meta name="theme-color" content="#F2C1BF"/>
+
+  
+</head>
+<body onLoad="loadQuestion()" id="quiz">
+  <div id="lightbox" onclick="closeLightBox()">
+    <div id= "message">Welcome to the WW2 QUIZ!!</div>
+  </div>
+
+
+
+ <ul class ="main-nav">
+	<li><a href="index.html"> COUNTRY </a> </li>	
+	<li><a href="bloc.html"> BLOC </a> </li>
+	<li class="active"><a href="quiz.html"> QUIZ </a> </li>
+ </ul><br>
+<h2><i>Geography Quiz</i></h2>
+<p>Click on the correct the answer</p>
+<button onclick = replay(score) class ="button"><b>Restart</b></button><br><br>
+
+<div >
+  <div class="header">
+    <div id="question">The Question</div>
+  </div>
+  
+  <div>
+    <div>
+     <div class="options" id="a" onclick="markIt('a')">A.</div>
+	 <div class="options" id="b" onclick="markIt('b')">B.</div>
+     <div class="options" id="c" onclick="markIt('c')">C.</div>
+	 <div class="options" id="d" onclick="markIt('d')">D.</div>
+	</div>
+  </div> 
+
+  
+  <div> <img id="image" src="quizimages/q1.png" alt=""></div>
+  
+
+  
+  <div>
+    <p>Score <span id="score"></span></p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Geoteacher</title>
+    
+    <!-- include an external style sheet -->
+	<link rel="stylesheet" href="style.css">  
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- include an external JavaScript file -->
+	 <script src="script.js"></script>
+	<!--include font links-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<!-- Favicon Link -->
+<link rel="shortcut icon" href="images/icon-192x192.png" />
+<link rel="apple-touch-icon" href="images/icon-192x192.png">
+<!-- link rel="manifest" href="manifest.json -->
+<link rel="manifest" href="manifest.json">
+  <!-- viewport-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Description -->
+    <meta name="description" content="An app which gives information about countries and has a geography quiz inbuilt">
+    <meta name="theme-color" content="#F2C1BF"/>
+
+  </head>
+ 
+ <body id= homepage>
+ 	<ul class ="main-nav">
+		<li class="active"><a href="index.html"> COUNTRY </a> </li>
+		<li><a href="bloc.html"> BLOC </a> </li>
+		<li><a href="quiz.html"> QUIZ </a> </li>
+	</ul><br>
+	<a href = "index.html" id = "title"><h1>Geoteacher</h1></a>
+	<p> Make sure that you scroll down for more results after searching and type in the official name of the country (eg. South Korea = Republic of Korea). Country names should be spelled correctly and have correct punctuation.</p>
+    <input aria-label = "searchbar" type="text" id="search"><br><br>
+	<button class="button" onclick="searchCountry()"> Country Search<i class="material-icons" id="search2">search</i></button><br><br>
+	<button class="button" onclick="fetchCountry()"> Display all countries<i class="fa fa-question-circle"></i></button><br><br>
+	<div id="country"></div><br><br>
+	<p> This website uses an api called "restcountries" you can find the Api documentation. <a href="https://restcountries.eu/">Here is the link to the website for restcountries</a></p>
+  
+  
+  
+  
+  </body>
+</html>
+  
+  
+  
+  
+  

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Geoteacher</title>
+    
+    <!-- include an external style sheet -->
+	<link rel="stylesheet" href="style.css">  
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- include an external JavaScript file -->
+	 <script src="script.js"></script>
+	<!--include font links-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<!-- Favicon Link -->
+<link rel="shortcut icon" href="images/icon-192x192.png" />
+<link rel="apple-touch-icon" href="images/icon-192x192.png">
+<!-- link rel="manifest" href="manifest.json -->
+<link rel="manifest" href="manifest.json">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Description -->
+<meta name="description" content="An app which gives information about countries and has a geography quiz inbuilt">
+      <meta name="theme-color" content="#F2C1BF"/>
+
+  </head>
+ 
+ <body id= homepage>
+ 	<ul class ="main-nav">
+		<li><a href="index.html"> COUNTRY </a> </li>
+		<li class="active"><a href="bloc.html"> BLOC </a> </li>
+		<li><a href="quiz.html"> QUIZ </a> </li>
+	</ul><br>
+	<a href = "bloc.html" id = "title"><h1>Geoteacher</h1></a>
+	
+
+  <label>
+	  <input aria-label = "searchbar" list = "bloc" type="text" id="search"><br><br>
+  </label>
+	<button class="button" onclick="searchBloc()" >Bloc Search<i class="material-icons" id="search2">search</i></button><br><br>
+		<datalist id="bloc">
+			<option value="EU">
+			<option value="EFTA">
+			<option value="CARICOM">
+			<option value="PA">
+			<option value="AU">
+			<option value="USAN">
+			<option value="EEU">
+			<option value="AL">
+			<option value="ASEAN">
+			<option value="CAIS">
+			<option value="CEFTA">
+			<option value="NAFTA">
+			<option value="SAARC">
+	</datalist>
+	<p> Make sure that you scroll down for more results after searching for all results.</p><br>
+  <div id="country"></div><br><br>
+   	<div id="bloc-list" >
+    <h3> All Blocs </h3>
+		<p>EU (European Union)</p>
+		<p>EFTA (European Free Trade Association)</p>
+		<p>CARICOM (Caribbean Community)</p>
+		<p>PA (Pacific Alliance)</p>
+		<p>AU (African Union)</p>
+		<p>USAN (Union of South American Nations)</p>
+		<p>EEU (Eurasian Economic Union)</p>
+		<p>AL (Arab League)</p>
+		<p>AESAN (Association of Southeast Asian Nations)</p>
+		<p>CAIS (Central American Integration System)</p>
+		<p>CEFTA (Central European Free Trade Agreement)</p>
+		<p>NAFTA (North American Free Trade Agreement)</p>
+		<p>SAARC (South Asian Association for Regional Cooperation)</p>
+	</div>
+	
+<p> This website uses an api called "restcountries" you can find the Api documentation. <a href="https://restcountries.eu/">Here is the link to the website for restcountries</a></p>
+  
+  
+  
+  
+  </body>
+</html>
+  
+  
+  
+  
+  
